@@ -1,0 +1,110 @@
+body{
+	margin:0;
+	padding:0;
+	background: url(../img/fondologin.jpg)no-repeat center top;
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh; 
+}
+
+.login-box{
+	border:5px solid;
+	border-radius: 5%;
+	width: 320px;
+	height: 420px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform:translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+.login-box .icono{
+	width: 100px;
+	height: 100px;
+	border-radius: 15%;
+	position:absolute;
+	top: -50px;
+	left: 35%;
+}
+
+.login-box label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	display: block;
+}
+
+.login-box h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.login-box input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+.inputtext, .inputpass{
+	border:none;
+	border-bottom: 5px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 18px ;
+}
+
+::placeholder { 
+	color: #F5DA81;
+}
+
+.inputsubmit{
+	border:none;
+	outline: none;
+	height:40px;
+	background: #FFBF00;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 20px;
+}
+
+.login-box a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: #F3E2A9;
+}
+
+.login-box a:hover{
+	color: #fff;
+}
+
+.inputsubmit:hover{
+	background-color: #F7D358;
+}
+
+.boton-VolverMenuPrincipal {
+text-decoration:none;
+font-weight: 600;
+font-size: 20px;
+color:white;
+position: fixed;
+
+padding-top:15px;
+padding-bottom:15px;
+padding-left:40px;
+padding-right:40px;
+background-color:#FFBF00;
+border-color: #d8d8d8;
+border-width: 3px;
+border-style: solid;
+border-radius:35px;
+}
+
