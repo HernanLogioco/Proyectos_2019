@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta charset="utf-8">
+  <title>Práctica 2 - JavaScript</title>
+  <style type="text/css"> 
+  	td {font-family:courier;}
+  </style>
+<script type="text/javascript">
+	function disparo(digito) {
+		if (digito == "borrar") {
+			document.calculadora.visor.value = "";
+	}else document.calculadora.visor.value=document.calculadora.visor.value+digito; 
+	}	
+
+	function total() {
+		document.calculadora.visor.value = eval(document.calculadora.visor.value);
+	}
+</script>
+
+
+
+
+</head>
+<body>
+  <center>
+  <h1 style="background:blue; color:white;">Práctica 2 con Javascript</h1>
+  <h2 style="color: violet">CALCULADORA DIGITAL<br>Básica</h2>
+  </center>
+  
+  <hr align=center>
+  <form name="calculadora">
+  <table bgcolor="aliceblue" border=2 align="center">
+     <tr>
+       <td colspan=5 align=right>
+       	<input type="text" name="visor"></td>
+     </tr>
+     <tr>
+       <td>
+       		<button type="button" onclick="disparo(7);">&nbsp;7&nbsp;</button>
+       	</td>
+       	<td>
+       		<button type="button" onclick="disparo(8);">&nbsp;8&nbsp;</button>
+       	</td>
+       	<td>
+       		<button type="button" onclick="disparo(9);">&nbsp;9&nbsp;</button>
+       	</td>
+       <td colspan=2><button type="button" onclick="disparo('borrar');">BORRAR</button></td>
+     </tr>
+     <tr>
+       <td><button type="button" onclick="disparo(4);">&nbsp;4&nbsp;</button></td>
+       <td><button type="button" onclick="disparo(5);">&nbsp;5&nbsp;</button></td>
+       <td><button type="button" onclick="disparo(6);">&nbsp;6&nbsp;</button></td>
+       <td><button type="button" onclick="disparo('*');">&nbsp;*&nbsp;</button></td>
+       <td><button type="button" onclick="disparo('/');">&nbsp;/&nbsp;</button></td>
+     </tr>
+     <tr>
+       <td><button type="button" onclick="disparo(1);">&nbsp;1&nbsp;</button></td>
+       <td><button type="button" onclick="disparo(2);">&nbsp;2&nbsp;</button></td>
+       <td><button type="button" onclick="disparo(3);">&nbsp;3&nbsp;</button></td>
+       <td><button type="button" onclick="disparo('+');">&nbsp;+&nbsp;</button></td>
+       <td><button type="button" onclick="disparo('-');">&nbsp;-&nbsp;</button></td>
+     </tr>     
+     <tr>
+       <td><button type="button" onclick="disparo(0);">&nbsp;0&nbsp;</button></td>
+       <td><button type="button" onclick="disparo('.');">&nbsp;.&nbsp;</button></td>
+       <td><button type="button" onclick="total();">&nbsp; = &nbsp;</button></td>
+       <td><button type="button" onclick="disparo('**');">&nbsp;^&nbsp;</button></td>
+       <td><button type="button" onclick="disparo('%');">&nbsp;MOD&nbsp;</button></td>
+     </tr>          
+  </table>
+</form>
+  <hr align=center>
+
+</body>
+</html>
