@@ -1,0 +1,96 @@
+body{
+	margin:0;
+	font-family: Old English Text MT,papyrus, arial, times new roman;
+	font-size: 20.5px;
+	background-image: url(./img_inicio/El-cielo-de-Urrechu-116-restaurante-1440x900.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+#menu-top {
+	height: 138px;
+	width: 100%;
+	background-image: url("./img_inicio/logo.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	opacity:0.8;
+}
+
+#menu-wrapper {
+	position: relative;
+	font-family: papyrus;
+	font-size: 20px;
+}
+
+#menu-wrapper ul{
+	padding: 0;
+	list-style:none;
+}
+
+#hmenu li{display:inline-block;
+	width: 140px;
+}
+
+#hmenu > li > a{
+	display: block;
+	padding: 10px 5px;
+	width: 100%;
+}
+
+li ul{
+	position: absolute;
+	display:none;
+}
+.sub-menu a {
+	display:block;
+	padding:10px 5px;
+	width:130px;
+}
+li:hover ul{
+	display:block;
+}
+
+#menu-wrapper, li ul{
+	background: #0B243B;
+}
+
+#hmenu{
+	text-align: center;
+	margin: 0 auto;
+}
+#hmenu a{color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+#hmenu li:hover{
+	background: #819FF7;
+	text-shadow: 0 0 2px #000;
+}
+
+#buscar {
+	position: absolute;
+    top: 13px;
+    right: 20px;
+}
+table {
+	width:100%;
+	border=0;
+}
+#parrafoppal p{
+
+	font-family: forte,arial,times new roman;
+	font-size: 23px;
+	text-align: justify;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+h6{
+	font-family: AR BERKLEY,arial,times new roman;
+	font-size: 20px;
+}
+marquee{
+	background-color: #0B243B;
+	color: white;
+}
